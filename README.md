@@ -22,7 +22,7 @@ Une application de gestion de produits développée avec Spring Boot et Spring D
 
 ### Configuration de la base de données
 
-L'application est configurée pour utiliser MySQL par défaut. La configuration se trouve dans `application.properties` :
+L'application est configurée pour utiliser MySQL par défaut. La configuration se trouve dans `application.properties` dans le dossier 'repositories' :
 
 ```properties
 # Configuration MySQL
@@ -36,6 +36,23 @@ spring.jpa.show-sql=true
 ```
 ## 📁 Structure du projet
 <img width="556" alt="capture" src="https://github.com/user-attachments/assets/1087f134-15bf-461b-8d7a-d4815ef5e85a" />
+
+## Package entities 
+### Classe 'Product' :
+<img width="594" alt="prod" src="https://github.com/user-attachments/assets/6c70340b-f9ef-481e-8e2c-cc3f101ce6e5" />
+
+## Package repositories
+### Classe 'ProductRepository'
+<img width="659" alt="repo" src="https://github.com/user-attachments/assets/d729b5be-a509-4f11-a780-2b82cd4291f6" />
+
+## Package web
+### Classe 'ProductRestService' :
+<img width="761" alt="rest" src="https://github.com/user-attachments/assets/f89abe80-ef5a-4a40-ba51-bc997827379e" />
+
+## 'SpringDataJpaProductsManagementAppApplication' :
+<img width="775" alt="test1" src="https://github.com/user-attachments/assets/1dd457a3-736d-48f4-ac9c-3f5bca826fff" />
+<img width="773" alt="test2" src="https://github.com/user-attachments/assets/7ea72ec4-4b58-47a2-888a-dd5b9b9d6e99" />
+
 
 ## 📡 Endpoints API
 
