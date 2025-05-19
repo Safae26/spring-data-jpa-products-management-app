@@ -75,8 +75,47 @@ L'application utilise les conventions de nommage de Spring Data JPA pour génér
 1. Cloner le dépôt :
 ```bash
 git clone https://github.com/Safae26/spring-data-jpa-products-management-app.git
-cd spring-data-jpa-products-management-app
-  
-  @Query("select p from Product p where p.price > :x")
-  List<Product> searchByPrice(@Param("x") double price);
   ```
+2. Lancer l'application :
+   ``` mvn spring-boot:run```
+
+L'application sera disponible sur : http://localhost:8086
+
+## Tests initiaux
+Des données de test sont automatiquement insérées au démarrage via la méthode run() dans la classe principale. Les opérations suivantes sont effectuées et affichées dans la console :
+
+1. Insertion de 3 produits :
+   - Computer (4300€, quantité: 3)
+   - Smart Phone (1200€, quantité: 10)
+   - Printer (1000€, quantité: 9)
+2. Affichage console des opérations :
+
+  ```properties
+  // 1. Affichage de tous les produits
+  Product(id=1, name=Computer, price=4300.0, quantity=3)
+  Product(id=2, name=Smart Phone, price=1200.0, quantity=10)
+  Product(id=3, name=Printer, price=1000.0, quantity=9)
+  
+  // 2. Recherche par ID (ex: ID=1)
+  ************************
+  1
+  Computer
+  4300.0
+  3
+  ************************
+  
+  // 3. Tests des méthodes de requête
+  ------------------------
+  FIND BY NAME
+  Method 1: findByNameContains("n")
+  Product(id=3, name=Printer, ...)
+  ------------------------
+  Method 2: search("%C%")
+  Product(id=1, name=Computer, ...)
+  ```
+Exemple de sortie console :
+
+```bash
+Product(id=1, name=Computer, price=4300.0, quantity=3)
+Product(id=2, name=Smart Phone, price=1200.0, quantity=10)
+```
