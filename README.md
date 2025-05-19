@@ -95,6 +95,13 @@ spring.jpa.show-sql=true
 | `GET`   | `/products`       | Récupère la liste de tous les produits |
 | `GET`   | `/products/{id}`  | Récupère un produit spécifique par son ID |
 
+- '/products' :
+  <img width="478" alt="prods" src="https://github.com/user-attachments/assets/d846a6bf-58dc-4b30-b7e0-22ba7154f110" />
+
+- '/products/{id}' :
+  <img width="478" alt="prod2" src="https://github.com/user-attachments/assets/730cc487-e267-47dd-ae62-08a30b41e07c" />
+
+
 ## 🔍 Fonctionnalités Spring Data JPA
 
 1. Méthodes de requête dérivées
