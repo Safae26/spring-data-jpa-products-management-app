@@ -96,9 +96,11 @@ spring.jpa.show-sql=true
 | `GET`   | `/products/{id}`  | Récupère un produit spécifique par son ID |
 
 - '/products' :
+  
   <img width="478" alt="prods" src="https://github.com/user-attachments/assets/d846a6bf-58dc-4b30-b7e0-22ba7154f110" />
 
 - '/products/{id}' :
+  
   <img width="478" alt="prod2" src="https://github.com/user-attachments/assets/730cc487-e267-47dd-ae62-08a30b41e07c" />
 
 
@@ -128,6 +130,7 @@ L'application utilise les conventions de nommage de Spring Data JPA pour génér
 - Java installé
 - Maven installé
 - MySQL ou H2 Database (selon configuration)
+- XAMP
 
 ### Installation
 1. Cloner le dépôt :
@@ -177,3 +180,20 @@ Exemple de sortie console :
 Product(id=1, name=Computer, price=4300.0, quantity=3)
 Product(id=2, name=Smart Phone, price=1200.0, quantity=10)
 ```
+Donc, on lance XAMP :
+
+<img width="497" alt="xamp" src="https://github.com/user-attachments/assets/2e720751-9d8c-41be-802e-87d2fed6bfad" />
+
+Et on clique sur 'admin' de la ligne de 'MySQL'.
+On remarque que notre base de données 'products_db' a été créée avec succès :
+
+<img width="223" alt="db" src="https://github.com/user-attachments/assets/242e07d2-b492-4077-845d-897b5d064cbf" />
+
+- Table Products :
+  <img width="424" alt="products" src="https://github.com/user-attachments/assets/a96287eb-8db8-4820-8f38-e8fc2b8c466c" />
+
+- Résultats dans la console :
+  <img width="749" alt="console" src="https://github.com/user-attachments/assets/f316ccd5-6c4f-4ee3-9377-45a09eba53df" />
+
+## Auteur
+**Safae ERAJI**
