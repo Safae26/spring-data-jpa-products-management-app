@@ -190,9 +190,11 @@ On remarque que notre base de données 'products_db' a été créée avec succè
 <img width="223" alt="db" src="https://github.com/user-attachments/assets/242e07d2-b492-4077-845d-897b5d064cbf" />
 
 - Table Products :
+  
   <img width="424" alt="products" src="https://github.com/user-attachments/assets/a96287eb-8db8-4820-8f38-e8fc2b8c466c" />
 
 - Résultats dans la console :
+  
   <img width="749" alt="console" src="https://github.com/user-attachments/assets/f316ccd5-6c4f-4ee3-9377-45a09eba53df" />
 
 ## Auteur
