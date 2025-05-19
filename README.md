@@ -62,6 +62,20 @@ L'application utilise les conventions de nommage de Spring Data JPA pour génér
   ```properties
   @Query("select p from Product p where p.name like :x")
   List<Product> search(@Param("x") String keyword);
+  ```
+
+## 🚀 Lancement de l'application
+
+### Prérequis
+- Java installé
+- Maven installé
+- MySQL ou H2 Database (selon configuration)
+
+### Installation
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/Safae26/spring-data-jpa-products-management-app.git
+cd spring-data-jpa-products-management-app
   
   @Query("select p from Product p where p.price > :x")
   List<Product> searchByPrice(@Param("x") double price);
